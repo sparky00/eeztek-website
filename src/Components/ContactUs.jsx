@@ -1,6 +1,46 @@
 import React from "react";
 
+import axios from "axios";
+let API_form = "pat-na1-31107309-2f19-4e55-af0c-daa200950a83";
+
 const ContactUs = () => {
+  const submitButton = () => {
+    console.log("Form");
+    let inputName = document.getElementById("name").ariaValueMax;
+    let inputEmail = document.getElementById("email").ariaValueMax;
+    // let inputMessage = document.getElementById("meassage").ariaValueMax;
+
+    var tempData = {
+      fields: [
+        {
+          name: "email",
+          value: inputEmail,
+        },
+        {
+          name: "firstname",
+          value: inputName,
+        },
+      ],
+    };
+
+    axios
+      .post(
+        `https://api.hsforms.com/submissions/v3/integration/secure/submit/44252009/727112c9-dd40-453f-a475-5d15b188f7fc`,
+        JSON.stringify(tempData),
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${API_form}`,
+          },
+        }
+      )
+      .then((resp) => console.log(tempData))
+
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <section class="body-font relative bg-black text-gray-400">
       <div class="container mx-auto px-5 py-10">
@@ -67,13 +107,16 @@ const ContactUs = () => {
               </div>
             </div>
             <div class="w-full p-2">
-              <button class="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none">
+              <button
+                onClick={submitButton}
+                class="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none"
+              >
                 Submit
               </button>
             </div>
 
             <div class="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center">
-              <a class="text-indigo-400">example@email.com</a>
+              {/* <a class="text-indigo-400">example@email.com</a> */}
               <p class="my-5 leading-normal">
                 49 Smith St. <br />
                 Saint Cloud, MN 56301

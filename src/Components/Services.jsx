@@ -19,7 +19,7 @@ export function Services() {
             <Copy size={20} />
           </span>
           <h1 className="text-xl font-semibold capitalize text-black">
-            Custom Web Application Development
+            Web Development
           </h1>
           <p className="text-sm text-gray-500">
             Revamp your business process management while transforming the
@@ -35,7 +35,7 @@ export function Services() {
             <Copy size={20} />
           </span>
           <h1 className="text-xl font-semibold capitalize text-black">
-            Website Design and Development
+            App Development
           </h1>
           <p className="text-sm text-gray-500">
             Our innate strength in blending the right technology, strategy, and
@@ -44,21 +44,6 @@ export function Services() {
             spanning all development and design phases, including adaptive,
             responsive websites, e-commerce solutions, website revamping,
             maintenance, etc.
-          </p>
-        </div>
-        <div className="space-y-3">
-          <span className="inline-block rounded-full bg-gray-100 p-3 text-black">
-            <Copy size={20} />
-          </span>
-          <h1 className="text-xl font-semibold capitalize text-black">
-            Web Portal Development
-          </h1>
-          <p className="text-sm text-gray-500">
-            Gift your audience a unified digital experience with our entire
-            spectrum of portal development services, from web portal design,
-            development, and modernization to consulting. Whether you need an
-            advanced enterprise-level web portal or a custom portal empowered by
-            the latest tech stack, we've got you covered.
           </p>
         </div>
         <div className="space-y-3">
@@ -81,7 +66,7 @@ export function Services() {
             <Copy size={20} />
           </span>
           <h1 className="text-xl font-semibold capitalize text-black">
-            API Development and Integration
+            Cloud Services
           </h1>
           <p className="text-sm text-gray-500">
             We can help you if you need to build or consume an API. Our teams
@@ -93,9 +78,7 @@ export function Services() {
           <span className="inline-block rounded-full bg-gray-100 p-3 text-black">
             <Copy size={20} />
           </span>
-          <h1 className="text-xl font-semibold capitalize text-black">
-            Ecommerce Development
-          </h1>
+          <h1 className="text-xl font-semibold capitalize text-black">Web 3</h1>
           <p className="text-sm text-gray-500">
             We help eCommerce businesses expand their customer reach, grow
             revenue, and drive customer satisfaction by building technically
@@ -108,9 +91,7 @@ export function Services() {
           <span className="inline-block rounded-full bg-gray-100 p-3 text-black">
             <Copy size={20} />
           </span>
-          <h1 className="text-xl font-semibold capitalize text-black">
-            CMS Development
-          </h1>
+          <h1 className="text-xl font-semibold capitalize text-black">IoT</h1>
           <p className="text-sm text-gray-500">
             Turn your website into a high-performing platform with our CMS
             development solution designed to provide end-users with different
@@ -125,7 +106,7 @@ export function Services() {
             <Copy size={20} />
           </span>
           <h1 className="text-xl font-semibold capitalize text-black">
-            Maintenance and Support
+            Data Analysis
           </h1>
           <p className="text-sm text-gray-500">
             We are a go-to source to keep your apps functional, reliable, and
@@ -140,51 +121,11 @@ export function Services() {
           <span className="inline-block rounded-full bg-gray-100 p-3 text-black">
             <Copy size={20} />
           </span>
-          <h1 className="text-xl font-semibold capitalize text-black">
-            Front-end Web Development
-          </h1>
+          <h1 className="text-xl font-semibold capitalize text-black">AL/ML</h1>
           <p className="text-sm text-gray-500">
             We work with modern frameworks like React.js, Angular, Vue.js, Next,
             and Gatsby to create next-generation user experiences that integrate
             and interact seamlessly with your database and APIs.
-          </p>
-        </div>
-        <div className="space-y-3">
-          <span className="inline-block rounded-full bg-gray-100 p-3 text-black">
-            <Copy size={20} />
-          </span>
-          <h1 className="text-xl font-semibold capitalize text-black">
-            Back-end Web Development
-          </h1>
-          <p className="text-sm text-gray-500">
-            Leverage our expertise with Cloud, DevOps, PHP, Node.js, Python,
-            .NET, Java, and RoR to build custom, secure and reliable backends
-            and APIs for web or mobile apps across multiple domains.
-          </p>
-        </div>
-        <div className="space-y-3">
-          <span className="inline-block rounded-full bg-gray-100 p-3 text-black">
-            <Copy size={20} />
-          </span>
-          <h1 className="text-xl font-semibold capitalize text-black">
-            DevOps & Cloud
-          </h1>
-          <p className="text-sm text-gray-500">
-            Tap into our on-demand DevOps expertise to achieve the cloud-enabled
-            business transformation aimed at cost-saving, agility,
-            speed-to-delivery, and innovation.
-          </p>
-        </div>
-        <div className="space-y-3">
-          <span className="inline-block rounded-full bg-gray-100 p-3 text-black">
-            <Copy size={20} />
-          </span>
-          <h1 className="text-xl font-semibold capitalize text-black">
-            Quality Assurance and Testing
-          </h1>
-          <p className="text-sm text-gray-500">
-            Our manual testing, automation testing, and project assessment help
-            us implement solutions that run without issues.
           </p>
         </div>
       </div>

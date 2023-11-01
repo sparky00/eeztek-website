@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container relative z-10 mx-auto px-4">
         <div className="-m-8 flex flex-wrap items-center justify-between">
           <div className="w-auto p-8">
-            <a href="#">
+            <a href="/">
               <div className="inline-flex items-center">
                 <svg
                   width="40"
@@ -29,7 +29,7 @@ export function Footer() {
               <li className="p-5">
                 <a
                   className="font-medium text-gray-600 hover:text-gray-700"
-                  href="#"
+                  href="/"
                 >
                   Privacy Policy
                 </a>
@@ -37,7 +37,7 @@ export function Footer() {
               <li className="p-5">
                 <a
                   className="font-medium text-gray-600 hover:text-gray-700"
-                  href="#"
+                  href="/"
                 >
                   Terms of Service
                 </a>
@@ -45,7 +45,7 @@ export function Footer() {
               <li className="p-5">
                 <a
                   className="font-medium text-gray-600 hover:text-gray-700"
-                  href="#"
+                  href="/"
                 >
                   Return Policy
                 </a>
@@ -53,7 +53,7 @@ export function Footer() {
               <li className="p-5">
                 <a
                   className="font-medium text-gray-600 hover:text-gray-700"
-                  href="#"
+                  href="/"
                 >
                   Contact Us
                 </a>
@@ -63,7 +63,7 @@ export function Footer() {
           <div className="w-auto p-8">
             <div className="-m-1.5 flex flex-wrap">
               <div className="w-auto p-1.5">
-                <a href="#">
+                <a href="/">
                   <div className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 hover:border-gray-400">
                     <svg
                       width="8"
@@ -81,7 +81,7 @@ export function Footer() {
                 </a>
               </div>
               <div className="w-auto p-1.5">
-                <a href="#">
+                <a href="/">
                   <div className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 hover:border-gray-400">
                     <svg
                       width="14"
@@ -99,7 +99,7 @@ export function Footer() {
                 </a>
               </div>
               <div className="w-auto p-1.5">
-                <a href="#">
+                <a href="/">
                   <div className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 hover:border-gray-400">
                     <svg
                       width="16"

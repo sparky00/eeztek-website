@@ -1,5 +1,5 @@
 import React from "react";
-import { Copy, ArrowRight } from "lucide-react";
+import { Copy } from "lucide-react";
 
 export function Services() {
   return (

@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/eeztek-website/static/css/main.04faecb1.css",
-    "main.js": "/eeztek-website/static/js/main.9815d68f.js",
-    "static/media/eeztek-logo.png": "/eeztek-website/static/media/eeztek-logo.d04704ca795665954b91.png",
-    "index.html": "/eeztek-website/index.html",
-    "main.04faecb1.css.map": "/eeztek-website/static/css/main.04faecb1.css.map",
-    "main.9815d68f.js.map": "/eeztek-website/static/js/main.9815d68f.js.map"
+    "main.css": "/test-project/static/css/main.04faecb1.css",
+    "main.js": "/test-project/static/js/main.3e118fb6.js",
+    "static/media/eeztek-logo.png": "/test-project/static/media/eeztek-logo.d04704ca795665954b91.png",
+    "index.html": "/test-project/index.html",
+    "main.04faecb1.css.map": "/test-project/static/css/main.04faecb1.css.map",
+    "main.3e118fb6.js.map": "/test-project/static/js/main.3e118fb6.js.map"
   },
   "entrypoints": [
     "static/css/main.04faecb1.css",
-    "static/js/main.9815d68f.js"
+    "static/js/main.3e118fb6.js"
   ]
 }

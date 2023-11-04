@@ -3,8 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-
-    <div className="bg-primary px-12">
+  <div className="bg-primary px-12">
       <section className="mx-auto max-w-7xl py-8 mx-8">
         <br></br>
         <br></br>

@@ -2,10 +2,11 @@ import React from "react";
 
 export function Process() {
   return (
-    <div className="mx-auto max-w-7xl px-2 lg:px-8 bg-cyan-400">
+    <div className="bg-primary">
+    <div className=" max-w-7xl px-2 lg:px-8 bg-cyan-400">
       <br></br>
       <br></br>
-      <h1 className="text-center text-2xl font-bold capitalize text-black lg:text-5xl">
+      <h1 className="text-2xl font-bold capitalize text-black lg:text-5xl">
         Process We Follow
       </h1>
       <br></br>
@@ -197,6 +198,7 @@ export function Process() {
       <br />
       <br />
       <br />
+    </div>
     </div>
   );
 }

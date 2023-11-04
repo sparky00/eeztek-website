@@ -492,7 +492,7 @@ const Stepper = () => {
     >
       <br></br>
       <br></br>
-      <h1 className="text-center text-2xl font-bold capitalize text-white lg:text-3xl">
+      <h1 className="text-center text-2xl font-bold capitalize text-black lg:text-3xl">
         Process We Follow
       </h1>
       <br></br>

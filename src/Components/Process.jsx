@@ -2,7 +2,7 @@ import React from "react";
 
 export function Process() {
   return (
-    <div className="mx-auto max-w-7xl px-2 lg:px-8 bg-black">
+    <div className="mx-auto max-w-7xl px-2 lg:px-8 bg-cyan-400">
       <br></br>
       <br></br>
       <h1 className="text-center text-2xl font-bold capitalize text-white lg:text-3xl">

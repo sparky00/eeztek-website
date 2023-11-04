@@ -7,7 +7,7 @@ const About = () => {
         <br></br>
         <br></br>
         <br></br>
-        <h2 className="text-2xl font-bold tracking-tight text-black xl:text-4xl">
+        <h2 className="text-2xl font-bold tracking-tight text-white xl:text-4xl">
           About Us
         </h2>
         <div className="lg:flex align-center justify-between">

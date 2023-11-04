@@ -1,28 +1,40 @@
-import React from "react";
+import React,{useState} from "react";
 
 import axios from "axios";
 let API_form = "pat-na1-31107309-2f19-4e55-af0c-daa200950a83";
 
 const ContactUs = () => {
-  const submitButton = () => {
-    console.log("Form");
-    let inputName = document.getElementById("name").ariaValueMax;
-    let inputEmail = document.getElementById("email").ariaValueMax;
-    // let inputMessage = document.getElementById("meassage").ariaValueMax;
 
-    var tempData = {
+const[name, setName] = useState('');
+const[email, setEmail] = useState('');
+const[message, setMessage] = useState('');
+
+
+
+
+  const submitHandler = async(e) => {
+   
+    e.preventDefault();
+    const tempData = {
       fields: [
         {
           name: "email",
-          value: inputEmail,
+          value: email,
         },
         {
-          name: "firstname",
-          value: inputName,
+          name: "name",
+          value: name,
+        },
+        {
+          name: "message",
+          value: message,
         },
       ],
     };
 
+
+    
+    console.log(tempData)
     axios
       .post(
         `https://api.hsforms.com/submissions/v3/integration/secure/submit/44252009/727112c9-dd40-453f-a475-5d15b188f7fc`,
@@ -34,34 +46,41 @@ const ContactUs = () => {
           },
         }
       )
-      .then((resp) => console.log(tempData))
+      .then((resp) => console.log("BUTTon",tempData))
 
       .catch((err) => {
-        console.log(err);
+        console.log("ERROr",err);
       });
   };
 
   return (
-    <section class="body-font relative bg-black text-gray-400">
+    <section 
+    style={{backgroundColor :"#01eac7"}}
+    class="body-font relative  text-gray-400">
       <div class="container mx-auto px-5 py-10">
         <div class="mb-12 flex w-full flex-col text-center">
           <h1 class="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">
             Contact Us
           </h1>
-          <p class="mx-auto text-base leading-relaxed lg:w-2/3">
+          <p class="mx-auto text-base leading-relaxed lg:w-2/3 text-black">
             Feel free to reach out to us! Whether you have a question, feedback,
             or a collaboration proposal, we'd love to hear from you.
           </p>
         </div>
 
         <div class="mx-auto md:w-2/3 lg:w-1/2">
-          <div class="-m-2 flex flex-wrap">
+          <form 
+          class="-m-2 flex flex-wrap"
+          onSubmit={submitHandler}
+          >
             <div class="w-1/2 p-2">
               <div class="relative">
                 <input
                   type="text"
                   id="name"
                   name="name"
+                  value={name}
+                  onChange={e => setName(e.target.value)}
                   class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
                   placeholder="Name"
                 />
@@ -79,6 +98,8 @@ const ContactUs = () => {
                   type="email"
                   id="email"
                   name="email"
+                  value={email}
+                  onChange={e=> setEmail(e.target.value)}
                   class="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
                   placeholder="Email"
                 />
@@ -95,6 +116,8 @@ const ContactUs = () => {
                 <textarea
                   id="message"
                   name="message"
+                  value={message}
+                  onChange={e => setMessage(e.target.value)}
                   class="peer h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-6 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
                   placeholder="Message"
                 ></textarea>
@@ -108,21 +131,21 @@ const ContactUs = () => {
             </div>
             <div class="w-full p-2">
               <button
-                onClick={submitButton}
-                class="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none"
+                type="submit"
+                class="mx-auto flex rounded border-0 bg-black py-2 px-8 text-lg text-white hover:bg-indigo-950 focus:outline-none"
               >
                 Submit
               </button>
             </div>
 
-            <div class="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center">
+            <div class="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center text-black">
               {/* <a class="text-indigo-400">example@email.com</a> */}
               <p class="my-5 leading-normal">
                 49 Smith St. <br />
                 Saint Cloud, MN 56301
               </p>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -130,3 +153,6 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+
+
+// git remote add origin https://github.com/sparky00/eeztek-website.git

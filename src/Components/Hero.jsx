@@ -1,11 +1,10 @@
 import React from "react";
+import heroImg from "../assets/images/hero-img.jpg";
 
 export function Hero() {
   return (
     <>
-      {/* <!-- Section: Design Block --> */}
-      <section className="mb-20">
-        {/* <!-- SVG Background --> */}
+      <section>
         <span className="[&>svg]:absolute [&>svg]:-z-10 [&>svg]:hidden [&>svg]:h-[560px] [&>svg]:w-full [&>svg]:lg:block">
           <svg
             data-name="Layer 1"
@@ -53,7 +52,7 @@ export function Hero() {
         {/* <!-- SVG Background --> */}
 
         {/* <!-- Jumbotron --> */}
-        <div className="px-6 py-12 text-center md:px-12 lg:my-12 lg:text-left">
+        <div className="px-6 pt-8 text-center md:px-12 lg:my-12 lg:text-left">
           <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div className="mt-12 lg:mt-0">
@@ -74,8 +73,9 @@ export function Hero() {
               </div>
               <div className="mb-12 lg:mb-0">
                 <img
-                  src="https://tecdn.b-cdn.net/img/new/standard/city/017.jpg"
+                  src={heroImg}
                   className="w-full rounded-lg shadow-lg dark:shadow-black/20"
+                  style={{ height: "450px", objectFit: "fill" }}
                   alt=""
                 />
               </div>

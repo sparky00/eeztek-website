@@ -3,11 +3,11 @@ import React from "react";
 const About = () => {
   return (
     <section className="bg-primary px-12">
-      <div className="px-8 py-8 mx-8">
+      <div className="mx-auto max-w-7xl py-8 mx-8">
         <br></br>
         <br></br>
         <br></br>
-        <h2 className="text-2xl font-bold tracking-tight text-white xl:text-4xl">
+        <h2 className="text-2xl font-bold tracking-tight text-black xl:text-4xl">
           About Us
         </h2>
         <div className="lg:flex align-center justify-between">

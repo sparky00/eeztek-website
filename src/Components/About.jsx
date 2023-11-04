@@ -2,12 +2,14 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="bg-primary px-12">
-      <div className="mx-auto max-w-7xl py-8 mx-8">
+    <>
+
+    <div className="bg-primary px-12">
+      <section className="mx-auto max-w-7xl py-8 mx-8">
         <br></br>
         <br></br>
         <br></br>
-        <h2 className="text-2xl font-bold tracking-tight text-black xl:text-4xl">
+        <h2 className="text-2xl font-bold capitalize text-black lg:text-5xl">
           About Us
         </h2>
         <div className="lg:flex align-center justify-between">
@@ -34,6 +36,7 @@ const About = () => {
               src="https://tecnologia.vamtam.com/wp-content/uploads/2023/04/shape-bg.svg"
               alt="svg element"
             />
+          </div>
           </div>
         </section>
       </div>

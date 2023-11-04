@@ -59,7 +59,7 @@ const[message, setMessage] = useState('');
     class="body-font relative  text-gray-400">
       <div class="container mx-auto px-5 py-10">
         <div class="mb-12 flex w-full flex-col text-center">
-          <h1 class="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">
+          <h1 class="text-2xl font-bold capitalize text-black lg:text-5xl mb-5">
             Contact Us
           </h1>
           <p class="mx-auto text-base leading-relaxed lg:w-2/3 text-black">

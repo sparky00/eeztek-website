@@ -1,16 +1,19 @@
 import React from "react";
+import "../index.css";
+
 // import { DollarSign, Zap, Moon, Filter } from "lucide-react";
 
 export function Industry() {
   return (
-    <div className="mx-auto max-w-7xl  py-5 md:px-6 md:py-10"><br />
-    <h2 className=" mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-      Industries We Serve
-    </h2>
-    <p className="mt-4 text-base leading-relaxed text-gray-600">
-          Here, we make almost every genre of applications. You name it and we
-          build it.
-        </p>
+    <div className="mx-auto max-w-7xl py-5 md:px-6 md:py-10">
+      <br />
+      <h2 className=" mt-6 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+        Industries We Serve
+      </h2>
+      <p className="mt-4 text-base leading-relaxed text-gray-600">
+        Here, we make almost every genre of applications. You name it and we
+        build it.
+      </p>
       <div className="mx-auto max-w-xl text-center">
         {/* <div className="mx-auto inline-flex rounded-full bg-gray-100 px-4 py-1.5">
           <p className="text-xs font-semibold uppercase tracking-widest text-black">
@@ -18,10 +21,9 @@ export function Industry() {
           </p>
         </div> */}
         {/* mt-12 grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4 */}
-       
       </div>
-      <div className=" mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-12 xl:grid-cols-4 xl:gap-16">
-        <div >
+      <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6 md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-8 xl:grid-cols-4 xl:gap-12 2xl:grid-cols-5 2xl:gap-12">
+        <div className="lg:inline-block sm:flex xs:flex justify-content: space-evenly;">
           <div className=" flex h-20 w-20  justify-center rounded-full bg-gray-100">
             <svg
               width="100px"
@@ -59,7 +61,7 @@ export function Industry() {
             sint. Velit officia consequat duis enim velit mollit.
           </p> */}
         </div>
-        <div>
+        <div className="lg:inline-block sm:flex xs:flex justify-content: space-evenly;">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <svg
               width="100px"
@@ -102,7 +104,7 @@ export function Industry() {
             sint. Velit officia consequat duis enim velit mollit.
           </p> */}
         </div>
-        <div>
+        <div className="lg:inline-block sm:flex xs:flex justify-content: space-evenly;">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <svg
               width="100px"
@@ -147,7 +149,7 @@ export function Industry() {
             sint. Velit officia consequat duis enim velit mollit.
           </p> */}
         </div>
-        <div>
+        <div className="lg:inline-block sm:flex xs:flex justify-content: space-evenly;">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <svg
               width="100px"
@@ -188,7 +190,7 @@ export function Industry() {
             sint. Velit officia consequat duis enim velit mollit.
           </p> */}
         </div>
-        <div>
+        <div className="lg:inline-block sm:flex xs:flex justify-content: space-evenly;">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <svg
               width="100px"
@@ -225,7 +227,7 @@ export function Industry() {
             sint. Velit officia consequat duis enim velit mollit.
           </p> */}
         </div>
-        <div>
+        <div className="lg:inline-block sm:flex xs:flex justify-content: space-evenly;">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <svg
               width="100px"
@@ -269,7 +271,7 @@ export function Industry() {
             sint. Velit officia consequat duis enim velit mollit.
           </p> */}
         </div>
-        <div>
+        <div className="lg:inline-block sm:flex xs:flex justify-content: space-evenly;">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <svg
               width="100px"
@@ -358,7 +360,7 @@ export function Industry() {
             sint. Velit officia consequat duis enim velit mollit.
           </p> */}
         </div>
-        <div>
+        <div className="lg:inline-block sm:flex xs:flex justify-content: space-evenly;">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <svg
               width="100px"

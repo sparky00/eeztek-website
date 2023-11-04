@@ -3,7 +3,7 @@ import React from "react";
 
 export function Services() {
   return (
-    <div className="mx-auto max-w-7xl py-5 md:px-6 md:py-10">
+    <div className="mx-auto max-w-7xl  py-5 md:px-6 md:py-10">
       <br></br>
       <br></br>
       <h1 className="text-2xl font-bold capitalize text-black lg:text-5xl">

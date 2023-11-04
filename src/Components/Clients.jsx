@@ -4,25 +4,6 @@ import logo1 from "../assets/images/1.png";
 import logo2 from "../assets/images/2.png";
 import logo3 from "../assets/images/3.png";
 import logo4 from "../assets/images/4.png";
-// const myStyle = {
-//   display: "flex",
-//   flexDirection: "column",
-//   alignItems: "center",
-// };
-// const clientLogos = [
-//   {
-//     src: "../assets/images/open-director.png",
-//   },
-//   {
-//     src: "../assets/images/sissor-cur.png",
-//   },
-//   {
-//     src: "../assets/images/procureDesk.png",
-//   },
-//   {
-//     src: "../assets/images/asset-panda.svg",
-//   },
-// ];
 
 export function Clients() {
   return (

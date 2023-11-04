@@ -1,5 +1,5 @@
 import React from "react";
-import { DollarSign, Zap, Moon, Filter } from "lucide-react";
+// import { DollarSign, Zap, Moon, Filter } from "lucide-react";
 
 export function Industry() {
   return (

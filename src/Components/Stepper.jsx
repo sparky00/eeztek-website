@@ -1,7 +1,19 @@
 import React,{useEffect, useState} from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 import { Container, Typography, Paper } from "@mui/material";
+import "@splidejs/splide/css";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+// new Splide(".splide").mount();
+
+// var splide = new Splide(".splide", {
+//   perPage: 3,
+//   focus: 0,
+//   omitEnd: true,
+// });
+
+// splide.mount();
 
 const cardData = [
   {
@@ -194,173 +206,96 @@ const Stepper = () => {
 
 
   return (
-    <div id="section-3" className="mt-4">
-    <br></br>
-      <br></br>
-      <h2 className="heading-style-3 text-center">
-              Our Process
-            </h2>
-      <h1 className="text-center heading-style-2">
-      Our some development process
-      </h1>
-      <br></br>
-      
-      
-      <br></br>
-    <Container
-      id="section-3"
-      className="mx-auto max-w-7xl px-2 lg:px-8 bg-black"
-      maxWidth="xl"
-      style={{backgroundColor:"#152445", padding: 0 }}
-    >
-      {/* <br></br>
-      <br></br>
-      <h1 className="text-center heading-style">
-        Process We Follow
-      </h1>
-      <br></br>
-      <br></br>
-      <hr />
-      <br></br> */}
+<div id="section-3" className="mt-4">
+<br></br>
+  <br></br>
+  <h2 className="heading-style-3 text-center">
+          Our Process
+        </h2>
+  <h1 className="text-center heading-style-2">
+  Our some development process
+  </h1>
+  <br></br>
+  
+  
+  <br></br>
+<Container
+  id="section-3"
+  className="mx-auto max-w-7xl px-2 lg:px-8 bg-black"
+  maxWidth="xl"
+  style={{backgroundColor:"#152445", padding: 0 }}
+>
+  {/* <br></br>
+  <br></br>
+  <h1 className="text-center heading-style">
+    Process We Follow
+  </h1>
+  <br></br>
+  <br></br>
+  <hr />
+  <br></br> */}
 
-      <Carousel
-        showThumbs={false}
-        showStatus={false}
-        showArrows
-        infiniteLoop
-        autoPlay
-        interval={3000}
-        stopOnHover={false}
-        showIndicators={false}
-        emulateTouch
-        transitionTime={500} // Adjust this value for smoother scrolling
-        swipeable
-        centerMode
-        centerSlidePercentage={33.33}
-        dynamicHeight
-        width="100%" // Take the whole width of the screen
-        showArrows={true}
-        showStatus={false}
-        showThumbs={false}
-        showIndicators={false}
-        showArrows={true}
-        // centerSlidePercentage={100 / 1} // Show 3 cards at a time
-        centerSlidePercentage={isSmallScreen ? 100 : 33.33}
-      >
-        {cardData.map((card, index) => (
-          <div key={index}>
-            <Paper
-            className="mt-3"
-              elevation={3}
-              sx={{
-                padding: "15px",
-                backgroundColor: "#152445", // Green background
-                color: "#fc3737", // White text
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                borderRadius: "8px",
-                height: "300px", // Adjust the height as needed
-                // justifyContent: 'space-between',
-              }}
-            >
-              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-white">
-                {card.svg}
-              </div>
-              <Typography
-                variant="h6"
-                style={{ margin: "10px", fontSize: "24px",fontFamily: "space grotesk, sans-serif" }}
-              >
-                {card.title}
-              </Typography>
-              <Typography className="heading-style-4 text-sm text-gray-500" style={{ fontSize: "16px" ,fontFamily: "space grotesk, sans-serif"}}>
-                {card.description}
-              </Typography>
-            </Paper>
+  <Carousel
+    showThumbs={false}
+    showStatus={false}
+    showArrows
+    infiniteLoop
+    autoPlay
+    interval={3000}
+    stopOnHover={false}
+    showIndicators={false}
+    emulateTouch
+    transitionTime={500} // Adjust this value for smoother scrolling
+    swipeable
+    centerMode
+    centerSlidePercentage={33.33}
+    dynamicHeight
+    width="100%" // Take the whole width of the screen
+    showArrows={true}
+    showStatus={false}
+    showThumbs={false}
+    showIndicators={false}
+    showArrows={true}
+    // centerSlidePercentage={100 / 1} // Show 3 cards at a time
+    centerSlidePercentage={isSmallScreen ? 100 : 33.33}
+  >
+    {cardData.map((card, index) => (
+      <div key={index}>
+        <Paper
+        className="mt-3"
+          elevation={3}
+          sx={{
+            padding: "15px",
+            backgroundColor: "#152445", // Green background
+            color: "#fc3737", // White text
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            borderRadius: "8px",
+            height: "300px", // Adjust the height as needed
+            // justifyContent: 'space-between',
+          }}
+        >
+          <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-white">
+            {card.svg}
           </div>
-        ))}
-      </Carousel>
-    </Container>
-    <br /><br />
+          <Typography
+            variant="h6"
+            style={{ margin: "10px", fontSize: "24px",fontFamily: "space grotesk, sans-serif" }}
+          >
+            {card.title}
+          </Typography>
+          <Typography className="heading-style-4 text-sm text-gray-500" style={{ fontSize: "16px" ,fontFamily: "space grotesk, sans-serif"}}>
+            {card.description}
+          </Typography>
+        </Paper>
+      </div>
+    ))}
+  </Carousel>
+</Container>
+<br /><br />
     </div>
   );
 };
 
 export default Stepper;
-
-// import React from 'react';
-// import { Carousel } from 'react-responsive-carousel';
-// import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
-// const cardData = [
-//   {
-//     logo: 'Logo 1',
-//     text: 'Lorem ipsum dolor sit amet',
-//   },
-//   {
-//     logo: 'Logo 2',
-//     text: 'Consectetur adipiscing elit',
-//   },
-//   {
-//     logo: 'Logo 3',
-//     text: 'Sed do eiusmod tempor',
-//   },
-//   {
-//     logo: 'Logo 4',
-//     text: 'Incididunt ut labore et dolore',
-//   },
-//   {
-//     logo: 'Logo 5',
-//     text: 'Magna aliqua. Ut enim ad minim veniam',
-//   },
-//   {
-//     logo: 'Logo 6',
-//     text: 'Quis nostrud exercitation ullamco',
-//   },
-//   {
-//     logo: 'Logo 7',
-//     text: 'Laboris nisi ut aliquip ex ea commodo',
-//   },
-// ];
-
-// function Stepper() {
-//   return (
-//     <Carousel
-//       showThumbs={false}
-//       showStatus={false}
-//       showArrows
-//       infiniteLoop
-//       autoPlay
-//       interval={3000}
-//       stopOnHover={false}
-//       showIndicators={false}
-//       emulateTouch
-//       transitionTime={500} // Adjust this value for smoother scrolling
-//       swipeable
-//       centerMode
-//       centerSlidePercentage={33.33}
-//       dynamicHeight
-//     >
-//       {cardData.map((card, index) => (
-//         <div key={index}>
-//           <div
-//             style={{
-//               display: 'flex',
-//               flexDirection: 'column',
-//               alignItems: 'center',
-//               padding: '20px',
-//               backgroundColor: '#ffffff',
-//               boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-//               borderRadius: '8px',
-//             }}
-//           >
-//             <h2 style={{ fontSize: '24px', marginBottom: '12px' }}>{card.logo}</h2>
-//             <p style={{ fontSize: '16px' }}>{card.text}</p>
-//           </div>
-//         </div>
-//       ))}
-//     </Carousel>
-//   );
-// }
-
-// export default Stepper;

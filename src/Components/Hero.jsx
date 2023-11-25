@@ -79,7 +79,7 @@ export function Hero() {
               <div className="mb-12 lg:mb-0">
                 <img
                   src={heroImg}
-                  className="w-full rounded-lg shadow-lg dark:shadow-black/20"
+                  className="w-full rounded-lg shadow-lg dark:shadow-black/20 sm:hidden"
                   style={{ height: "450px", objectFit: "fill" }}
                   alt=""
                 />

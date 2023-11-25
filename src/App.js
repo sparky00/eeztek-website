@@ -1,6 +1,6 @@
 import { Hero } from './Components/Hero';
 import { Navbar } from './Components/Navbar';
-import About from './Components/About';
+// import About from './Components/About';
 import { Services } from './Components/Services';
 import { Industry } from './Components/Industry';
 import ContactUs from './Components/ContactUs';

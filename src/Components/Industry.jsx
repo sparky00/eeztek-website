@@ -1,8 +1,11 @@
 import React from "react";
+import "../index.css";
+
 // import { DollarSign, Zap, Moon, Filter } from "lucide-react";
 
 export function Industry() {
   return (
+
     <div id="section-4" className="mx-auto max-w-7xl  py-5  md:px-6 md:py-10">
       <h2 className="heading-style-3 text-center">
               Industries We Serve
@@ -80,6 +83,7 @@ We Provide End-to-End IT Services
           <p className="text-sm text-gray-500 services-text">
           Our blockchain development team is equipped to handle anything from wallet development to smart contract development.
           </p>
+
         </div>
       </div>
     </div>

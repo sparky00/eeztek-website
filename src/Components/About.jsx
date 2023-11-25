@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <>
+    <div id="section-1">
   <div className="bg-primary px-12">
       <section className="mx-auto max-w-7xl py-8 mx-8">
         <br></br>
@@ -11,7 +11,7 @@ const About = () => {
         <h2 className="text-2xl font-bold capitalize text-black lg:text-5xl">
           About Us
         </h2>
-        <div className="lg:flex align-center justify-between">
+        <div className="text-xl lg:flex align-center justify-between">
           <div>
             <p className="mt-4 block max-w-4xl text-black-500">
               Eeztek is a service-based IT company that helps businesses of all
@@ -39,7 +39,7 @@ const About = () => {
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 };
 

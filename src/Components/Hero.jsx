@@ -5,7 +5,12 @@ export function Hero() {
   return (
     <>
       <section>
-        <span className="[&>svg]:absolute [&>svg]:-z-10 [&>svg]:hidden [&>svg]:h-[560px] [&>svg]:w-full [&>svg]:lg:block">
+        {/* <img
+          src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/banner_h_3_bg.png"
+          className="absolute inset-0 object-cover w-full h-full"
+          alt=""
+        /> */}
+        {/* <span className="[&>svg]:absolute [&>svg]:-z-10 [&>svg]:hidden [&>svg]:h-[560px] [&>svg]:w-full [&>svg]:lg:block">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +53,7 @@ export function Hero() {
               d="M -0.664 3.46 C -0.664 3.46 405.288 15.475 461.728 21.285 C 601.037 35.625 672.268 76.086 701.056 97.646 C 756.056 138.838 797.267 216.257 857.745 245.156 C 885.704 258.516 980.334 280.547 1048.511 268.826 C 1121.622 256.256 1199.864 226.267 1214.176 220.176 C 1241.273 208.643 1280.201 191.509 1343.494 179.436 C 1434.325 162.111 1439.504 196.099 1439.503 183.204 C 1439.502 161.288 1440 0 1440 0 L 1360 0 C 1280 0 1120 0 960 0 C 800 0 640 0 480 0 C 320 0 160 0 80 0 L 0 0 L -0.664 3.46 Z"
             ></path>
           </svg>
-        </span>
+        </span> */}
         {/* <!-- SVG Background --> */}
 
         {/* <!-- Jumbotron --> */}

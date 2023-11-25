@@ -7,20 +7,34 @@ import ContactUs from './Components/ContactUs';
 import { Footer } from './Components/Footer';
 import Stepper from './Components/Stepper';
 import { Clients } from './Components/Clients';
+import { useEffect } from 'react';
+import Hero2 from './Components/Hero2';
+import "./App.css";
+import About2 from './Components/About2';
+import { Contact } from './Components/Contact';
 
 
 
 function App() {
+  useEffect(() => {
+    // Initialize smooth scroll
+    const { SmoothScroll, initTE } = require("tw-elements");
+    initTE({ SmoothScroll });
+  }, []);
+
   return (
     <div>
       <Navbar />
-      <Hero />
+      <Hero2/>
+      {/* <Hero /> */}
       <Clients />
-      <About/>
+      <About2/>
+      {/* <About /> */}
       <Services />
       <Stepper />
       <Industry />
-      <ContactUs />
+      <Contact/>
+      {/* <ContactUs /> */}
       <Footer />
     </div>
   );

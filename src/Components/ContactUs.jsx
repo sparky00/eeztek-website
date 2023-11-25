@@ -43,7 +43,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="bg-primary py-12">
+    <section id="section-5" className="bg-primary py-12">
       <span className="[&>svg]:absolute [&>svg]:-z-10 [&>svg]:hidden [&>svg]:h-[560px] [&>svg]:w-full [&>svg]:lg:block">
         <svg
           data-name="Layer 1"

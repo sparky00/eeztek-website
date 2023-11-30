@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/eeztek-website/static/css/main.8b29e4e1.css",
-    "main.js": "/eeztek-website/static/js/main.a0265953.js",
-    "static/media/hero-img.jpg": "/eeztek-website/static/media/hero-img.e36f07a24ae1cdddc9ef.jpg",
+    "main.css": "/eeztek-website/static/css/main.e8538313.css",
+    "main.js": "/eeztek-website/static/js/main.0acdff04.js",
+    "static/js/200.dad524ce.chunk.js": "/eeztek-website/static/js/200.dad524ce.chunk.js",
+    "static/js/539.6ae320e5.chunk.js": "/eeztek-website/static/js/539.6ae320e5.chunk.js",
+    "static/media/hero-2.jpg": "/eeztek-website/static/media/hero-2.d51321718812f5728d6a.jpg",
     "static/media/1.png": "/eeztek-website/static/media/1.6adb8713a825fec82390.png",
     "static/media/eeztek-logo.png": "/eeztek-website/static/media/eeztek-logo.d04704ca795665954b91.png",
     "static/media/4.png": "/eeztek-website/static/media/4.a17f14614dfa3d15f288.png",
     "static/media/3.png": "/eeztek-website/static/media/3.a582bf035ed0040070fa.png",
     "static/media/2.png": "/eeztek-website/static/media/2.99410c5695f1e8d72bbd.png",
     "index.html": "/eeztek-website/index.html",
-    "main.8b29e4e1.css.map": "/eeztek-website/static/css/main.8b29e4e1.css.map",
-    "main.a0265953.js.map": "/eeztek-website/static/js/main.a0265953.js.map"
+    "main.e8538313.css.map": "/eeztek-website/static/css/main.e8538313.css.map",
+    "main.0acdff04.js.map": "/eeztek-website/static/js/main.0acdff04.js.map",
+    "200.dad524ce.chunk.js.map": "/eeztek-website/static/js/200.dad524ce.chunk.js.map",
+    "539.6ae320e5.chunk.js.map": "/eeztek-website/static/js/539.6ae320e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b29e4e1.css",
-    "static/js/main.a0265953.js"
+    "static/css/main.e8538313.css",
+    "static/js/main.0acdff04.js"
   ]
 }

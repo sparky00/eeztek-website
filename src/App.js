@@ -1,23 +1,41 @@
-import { Hero } from './Components/Hero';
+
 import { Navbar } from './Components/Navbar';
 import About from './Components/About';
 import { Services } from './Components/Services';
-import { Process } from './Components/Process';
 import { Industry } from './Components/Industry';
-import ContactUs from './Components/ContactUs';
 import { Footer } from './Components/Footer';
+import Stepper from './Components/Stepper';
+import { Clients } from './Components/Clients';
+import { useEffect } from 'react';
+import "./App.css";
+import { Contact } from './Components/Contact';
+import Technologies from './Components/Technologies';
+import Testimonial from './Components/Testimonial';
+import Hero from './Components/Hero';
+
 
 
 function App() {
+  useEffect(() => {
+    // Initialize smooth scroll
+    const { SmoothScroll, initTE } = require("tw-elements");
+    initTE({ SmoothScroll });
+  }, []);
+
+ 
+
   return (
     <div>
       <Navbar />
-      <Hero />
+      <Hero/>
+      <Clients />
       <About />
       <Services />
-      <Process />
+      <Stepper />
       <Industry />
-      <ContactUs />
+      <Technologies/>
+      <Testimonial/>
+      <Contact/>
       <Footer />
     </div>
   );

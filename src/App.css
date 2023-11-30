@@ -1,3 +1,14 @@
+:root {
+  --pimary-color: #152445;
+  --secondary-color: #fc3737;
+  --tertiary-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,700&family=Roboto&family=Space+Grotesk:wght@300;400;500&family=Teko:wght@600&display=swap');
 .App {
   text-align: center;
 }
@@ -14,14 +25,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--pimary-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--tertiary-color);
 }
 
 .App-link {
@@ -36,3 +47,216 @@
     transform: rotate(360deg);
   }
 }
+
+.border-radius {
+  border-radius: 10px;
+  width: 1px;
+}
+
+.primary-btn {
+  background: var(--secondary-color);
+  color: var(--tertiary-color);
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s;
+  padding: 16px 35px;
+  font-weight: 500;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.d-flex {
+  display: flex;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.container-width {
+  width: 1150px;
+}
+
+
+.heading-style {
+  font-family: space grotesk, sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  color: var(--tertiary-color);
+}
+
+.heading-style-2 {
+  font-family: space grotesk, sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  color: var(--pimary-color);
+}
+
+.heading-style-3 {
+  font-family: space grotesk, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.heading-style-4{
+  font-family: space grotesk, sans-serif;
+  
+}
+.heading-style-5 {
+  font-family: space grotesk, sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--pimary-color);
+}
+
+.font-style {
+  font-family: space grotesk, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--pimary-color);
+}
+.font-style-2 {
+  font-family: space grotesk, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--pimary-color);
+}
+.font-style-3 {
+  font-family: space grotesk, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--pimary-color);
+}
+.nav-bar{
+ background-color: var(--pimary-color);
+ font-family: open sans, sans-serif;
+ color: var(--tertiary-color);
+ 
+}
+
+.nav-bar a:hover{
+  color: var(--secondary-color);
+}
+
+.services-box{
+  background-color: var(--pimary-color);
+}
+
+.services-heading{
+  color: var(--tertiary-color);
+  font-family: space grotesk, sans-serif;
+
+}
+
+.services-heading:hover{
+  color: var(--secondary-color);
+  
+
+}
+
+.services-text{
+  font-family: space grotesk, sans-serif;
+}
+
+.industry-heading{
+  color: var(--secondary-color);
+  font-family: space grotesk, sans-serif;
+
+}
+
+.industry-heading:hover{
+  color: var(--pimary-color);
+  
+
+}
+
+.card {
+  background-position: center;
+background-repeat: round;
+  position: relative;
+   /* width: 300px;  */
+  height: 300px; 
+  
+}
+
+/* Style for the overlay div */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:var(--tertiary-color); /* Adjust the opacity as needed */
+  color: var(--pimary-color); /* Text color for the overlay */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: space grotesk, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+
+.pool-box-list {
+  width: 100px;
+  height: 100px;
+  padding: 10px 10px;
+  flex: 1;
+  text-align: center;
+  background: #fff;
+  margin: 3px 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.pool-box-list2 {
+  width: 15rem;
+  height: 15rem;
+  padding: 10px 10px;
+  flex: 1;
+  text-align: center;
+  background: #fff;
+  margin: 3px 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+@media (min-width: 640px) {
+  .pool-section .pool-box-list {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pool-section .pool-box-list {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pool-section .pool-box-list {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background-position: center;
+}
+.img-bg {
+  display: block;
+  position: absolute;
+  /* z-index: -100; */
+  width: 110%;
+}
+

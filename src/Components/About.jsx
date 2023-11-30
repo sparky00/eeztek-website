@@ -1,26 +1,24 @@
 import React from "react";
 import { ArrowLeft, ArrowRight } from 'lucide-react'
-const About2 = () => {
-    const styles = {
-        height: '100vh', // Default height for small screens
+const About = () => {
     
-        '@media (min-width: 768px)': {
-          height: '80vh', // Adjust the height for medium screens
-        },
+// const styles = {
+//         height: '100vh',
     
-        '@media (min-width: 1024px)': {
-          height: '80vh', // Adjust the height for large screens
-        },
-      };
-
-  
+//         '@media (min-width: 768px)': {
+//           height: '80vh',
+//         },
     
+//         '@media (min-width: 1024px)': {
+//           height: '80vh', 
+//         },
+//       };
+      
   return (
-    <section id="section-1">
+    <section id="about">
       <div
-      style={styles}
-        // style={{ height: "80vh" }}
-        className="z-1 relative ml-5 px-12 lg:flex lg:flex-row lg:items-center justify-center"
+      // style={styles}
+        className="z-1 relative ml-5 pr-3  pb-20 sm:pb-32 pt-44 sm:pt-52  lg:flex lg:flex-row lg:items-center justify-center"
       >
         <div className="w-full lg:w-1/3">
           <img
@@ -70,13 +68,6 @@ const About2 = () => {
           </div>
           
         </div>
-        {/* <div className="w-full lg:w-1/2">
-        <img
-          src="https://images.unsplash.com/photo-1603575448878-868a20723f5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fGRldmVsb3BlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
-          alt="ManWith Laptop"
-          className="h-full w-full rounded-md object-cover"
-        />
-      </div> */}
       
       </div>
       <br />
@@ -84,4 +75,4 @@ const About2 = () => {
   );
 };
 
-export default About2;
+export default About;

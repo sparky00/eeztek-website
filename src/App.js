@@ -1,17 +1,17 @@
-import { Hero } from './Components/Hero';
+
 import { Navbar } from './Components/Navbar';
-// import About from './Components/About';
+import About from './Components/About';
 import { Services } from './Components/Services';
 import { Industry } from './Components/Industry';
-import ContactUs from './Components/ContactUs';
 import { Footer } from './Components/Footer';
 import Stepper from './Components/Stepper';
 import { Clients } from './Components/Clients';
 import { useEffect } from 'react';
-import Hero2 from './Components/Hero2';
 import "./App.css";
-import About2 from './Components/About2';
 import { Contact } from './Components/Contact';
+import Technologies from './Components/Technologies';
+import Testimonial from './Components/Testimonial';
+import Hero from './Components/Hero';
 
 
 
@@ -22,19 +22,20 @@ function App() {
     initTE({ SmoothScroll });
   }, []);
 
+ 
+
   return (
     <div>
       <Navbar />
-      <Hero2/>
-      {/* <Hero /> */}
+      <Hero/>
       <Clients />
-      <About2/>
-      {/* <About /> */}
+      <About />
       <Services />
       <Stepper />
       <Industry />
+      <Technologies/>
+      <Testimonial/>
       <Contact/>
-      {/* <ContactUs /> */}
       <Footer />
     </div>
   );
